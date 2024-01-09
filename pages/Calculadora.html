@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sitio Web de Loiano Telas & Obras, empresa de servicio de sublimacion y carteleria">
+    <meta name="keywords" content="TELA, SUBLIMACION, CARTELERIA, STANDS, BANDERAS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--ICONOS FOOTER-->
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Oswald&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <!--TIPOGRAFIA FOOTER-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <!--TIPOGRAFIA HEADER-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--BOOTSRAP-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <header>
+        <h1>Loiano Telas y Obras</h1>
+        <div class="logos_div"><a href="../index.html"><img class="logos" src="../images/logos/bordeNegro.png"></a>
+            <nav class="nav navbar navbar-dark">
+                <button class="navbar-toggler boton" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="TrabajosRealizados.html">
+                                    Galeria de trabajos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <p class="menu"><a class="presu" href="Calculadora.html">Calculador de presupuesto</a></p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="simulador">
+        <div class="div">
+            <form id="cotizarForm" class="form">
+                <h4 class="tut">Arma tu presupuesto</h4>
+                <label for="" class="label">Ingrese la cantidad de metros:</label>
+                <input id="metrosInput" type="number" class="input">
+                <select name="telas" id="telaSeleccionada" class="input">
+                    <option value="0" selected>Elija tela...</option>
+                    <option value="Gruesa">Bandera Gruesa</option>
+                    <option value="Fina">Bandera Fina</option>
+                    <option value="Tropical">Tropical Mecanico</option>
+                    <option value="Propia">Voy a usar una tela propia</option>
+                    <option value="Papel">Solo necesito el papel para sublimar</option>
+                </select>
+                <div id="proteccion" class="specs"></div>
+                <div id="confeccion" class="specs"></div>
+                <div id="pleno" class="specs"></div>
+                <div id="corte" class="specs"></div>
+                <div id="mostrarResultado"></div>
+                <div class="fo">
+                    <button id="btnAlert" class="boton">Alert</button>
+                </div>
+            </form>
+        </div>
+        <div id="lista">
+            <h4 class="tit">Lista de precios por metro</h4>
+        </div>
+    </div>
+    <footer class="footer">
+        <a href="https://wa.me/541162732415" target="_blank">
+            <i class="fa-brands fa-whatsapp links--link1"></i>
+        </a>
+        <a href="https://www.instagram.com/loianotelasyobras/" target="_blank">
+            <i class="fa-brands fa-instagram links--link2" id="#450"></i>
+        </a>
+        <a href="https://www.facebook.com/LoianoTelasyObras/" target="_blank">
+            <i class="fa-brands fa-facebook links--link3" id="#450"></i>
+        </a>
+        <a href="https://goo.gl/maps/TAmwhjGMnsCvH9ia9" target="_blank">
+            <i class="fa-solid fa-location-dot links--link4"></i>
+        </a>
+        <p class="horario">Lunes a Viernes 8:00 - 12:00 / 14:00 - 17:00</p>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

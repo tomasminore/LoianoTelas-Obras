@@ -1,0 +1,31 @@
+.contacto {
+    margin: 100px;
+    padding: 30px;
+    border: 10px $red1 inset;
+    font-size: 30px;
+    background: linear-gradient(180deg, rgb(122, 122, 122), rgba(132, 127, 127, 0.361));
+    color: white;
+
+    .contactate{
+        text-align: center;
+        margin: 20px 0 40px 0;
+        font-family: $tipografia2;
+        font-size: 30px;
+    }
+
+    .alertas {
+        .alert {
+            font-size: 16px;
+            background: linear-gradient(180deg, rgb(122, 122, 122), rgba(132, 127, 127, 0.361));
+            color: white;
+        }
+        .alert1:hover{
+            background-color: yellow;
+            transition: all 1s;
+        }
+        .alert2:hover{
+            background-color: red;
+            transition: all 1s;
+        }
+    }
+}

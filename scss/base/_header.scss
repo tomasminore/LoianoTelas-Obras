@@ -1,0 +1,65 @@
+.animate__animated.animate__fadeInLeft {
+    --animate-delay: 0.7s;
+}
+
+.menu {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presu{
+    background-color: $red3;
+    border: 5px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 20px;
+    padding: 15px;
+text-align: center;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        display: none;
+    }
+
+    .logos_div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: black;
+    }
+
+    .nav {
+        position: absolute;
+        top: 5px;
+        right: 100px;
+    }
+
+    .logos {
+        width: 250px;
+        height: 100px;
+        padding: 15px;
+    }
+
+    nav {
+        .boton {
+            font-size: 80px;
+            width: 60px;
+            height: 50px;
+            margin: 10px;
+            background-color: $red3;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
